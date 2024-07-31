@@ -160,8 +160,15 @@ sources:
             tests:
               - not_null
 models:
-  - name: campaigns day
+  - name: int_campaigns.sql
     description: ads analysis per day level
+    columns:
+      - name: date_date
+        description: date of campaigns
+        tests:
+          - not_null
+  - name: finance_campaigns_day.sql
+    description: Analysis for Ads Margin
     columns:
       - name: date_date
         description: date of campaigns
