@@ -159,3 +159,12 @@ sources:
             description: number of clicks
             tests:
               - not_null
+models:
+  - name: campaigns day
+    description: ads analysis per day level
+    columns:
+      - name: date_date
+        description: date of campaigns
+        tests:
+          - not_null
+              
