@@ -37,14 +37,6 @@ sources:
             description: it repeats but needs to be concatenated with date_date
             tests:
               - not_null
-      - name: adwords
-        identifier:  raw_gz_adwords
-        description: table with campaign data
-        columns:
-          - name: campaign_key
-            description: it repeats but needs to be concatenated with date_date
-            tests:
-              - not_null
       - name: bing
         identifier:  raw_gz_bing
         description: table with bing campaign data
@@ -69,4 +61,3 @@ sources:
             description: it repeats but needs to be concatenated with date_date
             tests:
               - not_null
-                  
