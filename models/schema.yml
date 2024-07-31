@@ -37,12 +37,61 @@ sources:
             description: it repeats but needs to be concatenated with date_date
             tests:
               - not_null
+          - name: date_date
+            description: date column with no duplicates
+            tests:
+              - not_null
+          - name: paid_source
+            description: source whether its paid 
+            tests:
+              - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+              - not_null
+          - name: ads_cost
+            description: cost spent on ads
+            tests:
+              - not_null
+          - name: impression
+            description: number of impressions
+            tests:
+              - not_null
+          - name: click
+            description: number of clicks
+            tests:
+              - not_null
+              
       - name: bing
         identifier:  raw_gz_bing
         description: table with bing campaign data
         columns:
           - name: campaign_key
             description: it repeats but needs to be concatenated with date_date
+            tests:
+              - not_null
+          - name: date_date
+            description: date column
+            tests:
+              - not_null
+          - name: paid_source
+            description: source whether its paid 
+            tests:
+              - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+              - not_null
+          - name: ads_cost
+            description: cost spent on ads
+            tests:
+              - not_null
+          - name: impression
+            description: number of impressions
+            tests:
+              - not_null
+          - name: click
+            description: number of clicks
             tests:
               - not_null
       - name: criteo
@@ -53,11 +102,60 @@ sources:
             description: it repeats but needs to be concatenated with date_date
             tests:
               - not_null
+          - name: date_date
+            description: date column
+            tests:
+              - not_null
+          - name: paid_source
+            description: source whether its paid 
+            tests:
+              - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+              - not_null
+          - name: ads_cost
+            description: cost spent on ads
+            tests:
+              - not_null
+          - name: impression
+            description: number of impressions
+            tests:
+              - not_null
+          - name: click
+            description: number of clicks
+            tests:
+              - not_null
+      
       - name: facebook
         identifier:  raw_gz_facebook
         description: table with campaign data
         columns:
           - name: campaign_key
             description: it repeats but needs to be concatenated with date_date
+            tests:
+              - not_null
+          - name: date_date
+            description: date column
+            tests:
+              - not_null
+          - name: paid_source
+            description: source whether its paid 
+            tests:
+              - not_null
+          - name: camPGN_name
+            description: name of the campaign
+            tests:
+              - not_null
+          - name: ads_cost
+            description: cost spent on ads
+            tests:
+              - not_null
+          - name: impression
+            description: number of impressions
+            tests:
+              - not_null
+          - name: click
+            description: number of clicks
             tests:
               - not_null
